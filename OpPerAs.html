@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Forms - Supervisor Appraisal</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+	<link rel="stylesheet" href="assets/css/ready.css">
+	<link rel="stylesheet" href="assets/css/demo.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+  <!-- datepicker -->
+ 
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+								 
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-header">
+			<div class="logo-header">
+				<a href="index.html" class="logo">
+				Operative Staff
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<button class="topbar-toggler more"><i class="la la-ellipsis-v"></i></button>
+			</div>
+			<nav class="navbar navbar-header navbar-expand-lg">
+				<div class="container-fluid">
+					
+					<form class="navbar-left navbar-form nav-search mr-md-3" action="">
+						<div class="input-group">
+							<input type="text" placeholder="Search ..." class="form-control">
+							<div class="input-group-append">
+								<span class="input-group-text">
+									<i class="la la-search search-icon"></i>
+								</span>
+							</div>
+						</div>
+					</form>
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="la la-envelope"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">New Message</a>
+								<a class="dropdown-item" href="#">Inbox</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Bin</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="la la-bell"></i>
+								<span class="notification">3</span>
+							</a>
+							<ul class="dropdown-menu notif-box" aria-labelledby="navbarDropdown">
+								<li>
+									<div class="dropdown-title">You have 4 new notifications</div>
+								</li>
+								<li>
+									<div class="notif-center">
+										<a href="#">
+											<div class="notif-icon notif-primary"> <i class="la la-user-plus"></i> </div>
+											<div class="notif-content">
+												<span class="block">
+													New user registered
+												</span>
+												<span class="time">5 minutes ago</span> 
+											</div>
+										</a>
+										<a href="#">
+											<div class="notif-icon notif-success"> <i class="la la-comment"></i> </div>
+											<div class="notif-content">
+												<span class="block">
+													Rahmad commented on Admin
+												</span>
+												<span class="time">12 minutes ago</span> 
+											</div>
+										</a>
+										<a href="#">
+											<div class="notif-img"> 
+												<img src="assets/img/profile2.jpg" alt="Img Profile">
+											</div>
+											<div class="notif-content">
+												<span class="block">
+													Reza sent messages to you
+												</span>
+												<span class="time">12 minutes ago</span> 
+											</div>
+										</a>
+										<a href="#">
+											<div class="notif-icon notif-danger"> <i class="la la-heart"></i> </div>
+											<div class="notif-content">
+												<span class="block">
+													Farrah liked Admin
+												</span>
+												<span class="time">17 minutes ago</span> 
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<a class="see-all" href="javascript:void(0);"> <strong>See all notifications</strong> <i class="la la-angle-right"></i> </a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="assets/img/profile.jpg" alt="user-img" width="36" class="img-circle"><span >Hizrian</span></span> </a>
+							<ul class="dropdown-menu dropdown-user">
+								<li>
+									<div class="user-box">
+										<div class="u-img"><img src="assets/img/profile.jpg" alt="user"></div>
+										<div class="u-text">
+											<h4>Shavani S. Stewart</h4>
+											<p class="text-muted">shavani.apua.ag</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+										</div>
+									</li>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#"><i class="ti-user"></i> My Profile</a>
+									<a class="dropdown-item" href="#"><i class="ti-email"></i> Inbox</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#"><i class="ti-settings"></i> Account Setting</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#"><i class="fa fa-power-off"></i> Logout</a>
+								</ul>
+								<!-- /.dropdown-user -->
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+			<div class="sidebar">
+				<div class="scrollbar-inner sidebar-wrapper">
+					<div class="user">
+						<div class="photo">
+							<img src="assets/img/profile.jpg">
+						</div>
+						<div class="info">
+							<a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+								<span>
+									Shavani S. Stewart
+									<span class="user-level">Administrator</span>
+									<span class="caret"></span>
+								</span>
+							</a>
+							<div class="clearfix"></div>
+
+							<div class="collapse in" id="collapseExample" aria-expanded="true" style="">
+								<ul class="nav">
+									<li>
+										<a href="#profile">
+											<span class="link-collapse">My Profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="#edit">
+											<span class="link-collapse">Edit Profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="#settings">
+											<span class="link-collapse">Settings</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="index.html">
+								<i class="la la-dashboard"></i>
+								<p>Dashboard</p>
+							</a>
+						</li>
+						<li class="nav-item active">
+							<a href="forms.html">
+								<i class="la la-keyboard-o"></i>
+								<p>Forms</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-panel">
+				<div class="content">
+					<div class="container-fluid">
+						 <div class="dropdown">
+							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Forms
+								<span class="caret"></span></button><br><br>
+								<ul class="dropdown-menu">
+									<li class="dropdown-header"><h6>Appraisals</h6></li>
+									<li><a href="PerfPlanGoalSet.html">Performance Planning and Goal Setting</a></li>
+									<li><a href="PerfAsRec.html">Performance Assessment and Recommendation</a></li>
+									<li><a href="SupAppr.html">Supervisor Appraisal Form</a></li>
+									<li><a href="ApprDisc.html">Appraisal Discussion/Recommendation</a></li>
+									<li><a href="OpPerAs.html">Operative Staff Performance Assessment</a></li>
+								</ul>
+						</div>
+						
+			
+						
+						<div class="row">
+							<div class="col-md-9">
+								<div class="card">
+									<div class="card-header">
+										<div class="card-title">
+										<ul>
+											<li>Reason for the Evaluation</li></div>
+										</ul>
+									</div>
+									<div class="card-body">
+									<form>
+										<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" value="">
+												<span class="form-check-sign"><strong>Annual<strong></span>
+										</label> &thinsp; &thinsp;
+										<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" value="">
+												<span class="form-check-sign"><strong>Merit<strong></span>
+										</label>&thinsp; &thinsp;
+										<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" value="">
+												<span class="form-check-sign"><strong>End of Probation<strong></span>
+										</label>&thinsp; &thinsp;
+										<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" value="">
+												<span class="form-check-sign"><strong>Performance<strong></span>
+										</label>&thinsp; &thinsp;
+										<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" value="">
+												<span class="form-check-sign"><strong>Promotion<strong></span>
+										</label>&thinsp; &thinsp;
+										<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" value="">
+												<span class="form-check-sign"><strong>Other:<strong></span>
+										</label>										
+										<div class="col-md-2 p-0">
+												<input type="text" class="form-control input-full" id="other" placeholder="Other">
+										</div>
+											
+										<div class="form-group form-inline">
+											<label for="inlineinput" class="col-md-3 col-form-label"><li><h6>Evaluation Period</h6></li></label>
+												<input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+									</div>
+									<div class="card-action">
+											<input type="button" name="reset_form" value="Reset Table" onclick="this.form.reset();">
+										</div>
+									</form>
+									
+										<script>
+																		
+									$(function() {
+
+									$('input[name="daterange"]').daterangepicker({
+									opens: 'left'
+
+									}, function(start, end, label) {
+
+										console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+
+									});
+
+									});
+
+									</script>
+			
+						</div>
+						</div>
+					</div>
+					<div class="row">
+							<div class="col-md-9">
+								<div class="card">
+									<div class="card-header">
+										<div class="card-title">
+											<ul>
+												<li>Section #1</li></div>
+												<p>Achievement of Performance Goals</p>
+											</ul>
+										</div>
+			
+											<div class="card-body">
+												<form>
+												<table class="table table-striped mt-3" id ="Rating">
+													<thead>
+													<tr>
+														<th scope="col">Goals established for period under review</th>
+														<th scope="col">Achievement</th>
+														<th scope="col">Rating- Scale of 1-4</th>
+														
+													</tr>
+													</thead>
+													<tbody>
+													<tr>																
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td> 
+														<td><input type="text" class='txtCal'  ></td>
+													</tr>
+													<tr>
+														<td><input type="text" class="form-control input-pill" id="" placeholder="" oninput = GetScore()></td>
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>  
+														<td><input type="text" class='txtCal'   /></td> 
+													</tr>
+													<tr>
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+														<td><input type="text" class='txtCal'   /></td>
+													</tr>
+													<tr>
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+														<td><input type="text" class='txtCal'   /></td>
+													</tr>
+													<tr>
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+														<td><input type="text" class='txtCal'   /></td>
+													</tr>
+													<tr>
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+														<td><input type="text" class='txtCal'   /></td>
+													</tr>
+													<tr>
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+														<td><input type="text" class='txtCal'   /></td>
+													</tr>
+													<tr>
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+														<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+														<td><input type="text" class='txtCal'   /></td>
+													</tr>
+													<tr> 
+														<td><span><b>Overall Section Rating :</b></span></td>
+														<td><b><span id="total_sum_value"></span></b></td>
+													</tr>
+													<tr>
+														<td><span><b>Overall Section Score  : /30</b></span></td>
+														<td><b><span id="SectionScore" ></span></b></td>
+													</tr>
+													<tr>
+														<td><span><b>Overall Section Percentage : </b></span></td>
+														<td><b><span id="OverallPercentage"></span></b></td>
+													</tr>
+													</tbody>
+													</table>
+													
+													<div>
+														<input type="button" value="Add Row" onclick="addRow();" />
+														<input type="button" name="reset_form" value="Reset Table" onclick="this.form.reset();">
+													</div>
+												</form>
+											
+											
+									<script>
+	
+								function addRow() {
+								var table = document.getElementById("Rating");
+								var count = parseInt(table.rows[1].cells.length);
+								var rowCount = parseInt(prompt("Enter the number of row to be created?"));
+									for(var k = 0; k < rowCount; k++) {
+										var row = table.insertRow(1);
+											for(var i=0;i<count;i++) {
+												row.insertCell(i).innerHTML = "<input type='text' class = 'txtCal'/>";
+												
+			}								
+		}
+	}
+								</script>						
+								<script>
+									$(document).ready(function()
+									{
+										$("#Rating").on('input', '.txtCal' , function()
+										{
+											var calculated_total_sum = 0;
+											var score = 0;
+											var percentage = 0;
+											var i = 0;
+
+											$("#Rating .txtCal").each(function()
+											{
+												var get_text_box_value = $(this).val();
+												if($.isNumeric(get_text_box_value))
+												{
+													calculated_total_sum += parseFloat(get_text_box_value);
+													i+= 4;
+													score= ((calculated_total_sum/i)*30);
+													percentage = ((score/30)*100);
+												}
+											});
+													$("#total_sum_value").html(calculated_total_sum);
+													$("#SectionScore").html(score.toFixed(2));
+													$("#OverallPercentage").html(percentage.toFixed(2));
+										});
+									});
+								</script>
+									
+									
+																								
+									<div class="form-group">
+												<label for="comment"><strong>Comments<strong></label>
+												<textarea class="form-control" id="comment" rows="5">
+
+												</textarea>
+											</div>
+											
+									<div class="card-action">
+												<input type="button" id= "reset" value="Reset" onclick= "resetComment()" />
+											</div>
+									<script>
+									function resetComment(e)
+									{
+										document.getElementById('comment').value = "";
+									}
+									document.getElementById("reset").addEventListener('click', resetComment, true);
+									
+									</script>
+				
+							</div>
+						</div>
+					</div>
+				</div>
+				
+						<div class="row">
+							<div class="col-md-9">
+								<div class="card">
+									<div class="card-header">
+										<div class="card-title">
+											
+											<ul>
+												<li>Section #2</li></div>
+												<h5>Performance of Key Duties: 40%</h5>												
+											</ul>
+										</div>
+			
+											<div class="card-body">
+											<form>
+											<table class="table table-striped mt-3" id ="RatingTwo">
+											<tr>
+													<th colspan= "13"><h6>Supervisory and Leadership Skills</h6></th>													
+											</tr>
+											<tr>
+												<td><span>Planning and Organizational Skills</span></td>
+												<td><input type="text" class='txtCal'   /></td>
+											</tr>
+										    <tr>
+												<td><span>Decision Making</span></td>
+												<td><input type="text" class='txtCal'   /></td>
+											 </tr>
+											 <tr>
+												<td><span>Leadership</span></td>
+												<td><input type="text" class='txtCal'   /></td>
+											 </tr>
+											 <tr>
+												<td><span>Financial Management</span></td>
+												<td><input type="text" class='txtCal'   /></td>
+											 </tr>
+											 <tr>
+												<td><span>Communication</span></td>
+												<td><input type="text" class='txtCal'   /></td>
+											 </tr>
+											 <tr>
+												<td><span>Coaching and Development</span></td>
+												<td><input type="text" class='txtCal'   /></td>
+											 </tr>
+											 <tr>
+												<td><span>Quantity of Work</span></td>
+												<td><input type="text" class='txtCal'   /></td>
+											</tr>
+											<tr>
+												<td><span>Quality of Work</span></td>
+												<td><input type="text" class='txtCal'   /></td>
+											</tr>
+											 <tr>
+												<td><span>Knowledge of Job</span></td>
+												<td><input type="text" class='txtCal'   /></td>
+											</tr>
+											<tr>
+												<td>Job Related Competencies</td>
+												<td><input type="text" class='txtCal'   /></td>
+											</tr>
+											<tr>
+												<td><span>Teamwork</span></td>
+												<td><input type="text" class='txtCal'   /></td>
+											</tr>
+											<tr>
+												<td><span>Initiative</span></td>
+												<td><input type="text" class='txtCal'   /></td>
+											</tr>
+											<tr>
+												<td><span><b>Overall Section Rating  :</b></span></td>
+												<td><b><span id="total_sum"></span></b></td>
+											</tr>
+											<tr>
+												<td><span><b>Overall Section Score  : /40</b></span></td>
+												<td><b><span id="SecScore"></span></b></td>
+											</tr>
+											<tr>
+												<td><span><b>Overall Section Percentage : </b></span></td>
+												<td><b><span id="OverallPercent"></span></b></td>
+										</tr>
+									</table>
+															<div class="card-action">
+																  <input type="button" name="reset_form" value="Reset Table" onclick="this.form.reset();">
+																</div>
+									</form>
+												
+											<script>
+											$(document).ready(function()
+											{
+												$("#RatingTwo").on('input', '.txtCal' , function()
+												{
+													var calc_sum = 0;
+													var scores = 0;
+													var percent = 0;
+													var s = 0;
+
+													$("#RatingTwo .txtCal").each(function()
+													{
+														var text_box_value = $(this).val();
+														if($.isNumeric(text_box_value))
+														{
+															calc_sum += parseFloat(text_box_value);
+															s+=4;
+															scores= ((calc_sum/s)*40);
+															percent = ((scores/40)*100);
+														}
+													});
+															$("#total_sum").html(calc_sum);
+															$("#SecScore").html(scores.toFixed(2));
+															$("#OverallPercent").html(percent.toFixed(2));
+												});
+											});
+											</script>
+										
+											<div class="form-group">
+												<label for="comment"><strong>Comments<strong></label>
+												<textarea class="form-control" id="comment2" rows="5">
+
+												</textarea>
+											</div>
+											
+											<div class="card-action">
+													<input type="button" id= "reset2" value="Reset" onclick= "resetComment2()" />
+												</div>
+									<script>
+									function resetComment2(e)
+									{
+										document.getElementById('comment2').value = "";
+									}
+									document.getElementById("reset2").addEventListener('click', resetComment2, true);
+									
+									</script>
+										</div>
+									</div>
+								</div>
+							</div>
+									<div class="row">
+										<div class="col-md-9">
+											<div class="card">
+												<div class="card-header">
+													<div class="card-title">
+													<ul>
+														<li>Section #3</li></div>
+														<h5>General Performance Requirements: 30%</h5>												
+													</ul>
+													</div>
+														<div class="card-body">
+															<form>
+															<table class="table table-striped mt-3" id ="RatingThree">
+															<tr>
+																<th colspan= "13"><h6>Goals established for period under review</h6></th>													
+															</tr>
+															<tr>
+																<td><span>Adherance to Policy</span></td>
+																<td><input type="text" class='txtCal'   /></td>
+															</tr>
+															<tr>
+																<td><span>Appearance</span></td>
+																<td><input type="text" class='txtCal'   /></td>
+															</tr>
+															<tr>
+																<td><span>Dependability, Attendance, Time and Self-Management</span></td>
+																<td><input type="text" class='txtCal'   /></td>
+															</tr>
+															<tr>
+																<td><span>Accountability</span></td>
+																<td><input type="text" class='txtCal'   /></td>
+															</tr>
+															<tr>
+																<td><span>Flexibility</span></td>
+																<td><input type="text" class='txtCal'   /></td>
+															</tr>
+															<tr>
+																<td><span>Attitude</span></td>
+																<td><input type="text" class='txtCal'   /></td>
+															</tr>
+															<tr>
+																<td><span>Customer Service Excellence</span></td>
+																<td><input type="text" class='txtCal'   /></td>
+															</tr>
+															<tr>
+																<td><span>Learning and Continuous Development</span></td>
+																<td><input type="text" class='txtCal'   /></td>
+															</tr>
+															<tr>
+																<td><span>Health and Safety</span></td>
+																<td><input type="text" class='txtCal'   /></td>
+															</tr>
+															<tr>
+																<td><span>Job Related Competencies</span></td>
+																<td><input type="text" class='txtCal'   /></td>
+														   </tr>
+														   <tr>
+																<td><span><b>Overall Section Rating  :</b></span></td>
+																<td><b><span id="totalsum"></span></b></td>
+													      </tr>
+														  <tr>
+																<td><span><b>Overall Section Score  : /30</b></span></td>
+																<td><b><span id="SScore"></span></b></td>
+														 </tr>
+														 <tr>
+																<td><span><b>Overall Section Percentage : </b></span></td>
+																<td><b><span id="Percent"></span></b></td>
+														</tr>
+														</table>
+														
+														<div class="card-action">
+																  <input type="button" name="reset_form" value="Reset Table" onclick="this.form.reset();">
+														</div>
+														
+														</form>
+									<script>
+									$(document).ready(function()
+									{
+										$("#RatingThree").on('input', '.txtCal' , function()
+										{
+											var calc_sum = 0;
+											var scores = 0;
+											var percent = 0;
+											var s = 0;
+
+											$("#RatingThree .txtCal").each(function()
+											{
+												var get_text_box_value = $(this).val();
+												if($.isNumeric(get_text_box_value))
+												{
+													calc_sum += parseFloat(get_text_box_value);
+													s+=4;
+													scores= ((calc_sum/s)*30);
+													percent = ((scores/30)*100);
+												}
+											});
+													$("#totalsum").html(calc_sum);
+													$("#SScore").html(scores.toFixed(2));
+													$("#Percent").html(percent.toFixed(2));
+										});
+									});
+									</script>
+
+									
+											<div class="form-group">
+												<label for="comment"><strong>Comments<strong></label>
+													<textarea class="form-control" id="comment3" rows="5">
+
+													</textarea>
+												</div>
+												<div class="card-action">
+													<input type="button" id= "reset3" value="Reset" onclick= "resetComment3()" />
+												</div>
+									<script>
+									function resetComment3(e)
+									{
+										document.getElementById('comment3').value = "";
+									}
+									document.getElementById("reset3").addEventListener('click', resetComment3, true);
+									
+									</script>
+										</div>
+									</div>
+								</div>
+							</div>
+											<div class="row">
+												<div class="col-md-9">
+													<div class="card">
+														<div class="card-header">
+															<div class="card-title">
+															  <ul>
+																<li>Section #4</li>
+																<div>
+																  <h5>Recommendations for Improvements/Career Development:</h5>
+																  <h6>Improvement Strategies</h6>
+																</div>
+																<div class="card-body">
+																<form>
+																  <table class="table table-striped mt-3" id="SectionFour">
+																	<thead>
+																	  <tr>
+																		<th scope="col">Performance Gaps(List areas for improvements based on actual vs. budgeted results)</th>
+																		<th scope="col">Specific Development</th>
+																		<th scope="col">Targeted Date</th>
+																	  </tr>
+																	</thead>
+																	<tbody>
+																	  <tr>
+																		<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																		<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																		<td><input type="text" name="daterange" value="01/01/2018 - 01/15/2018" /></td>
+																	
+																	  </tr>
+																	  <tr>
+																		<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																		<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																		<td><input type="text" name="daterange" value="01/01/2018 - 01/15/2018" /></td>
+																	  </tr>
+																	  <tr>
+																		<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																		<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																		<td><input type="text" name="daterange" value="01/01/2018 - 01/15/2018" /></td>
+																	  </tr>
+																	   <tr>
+																		<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																		<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																		<td><input type="text" name="daterange" value="01/01/2018 - 01/15/2018" /></td>
+																	  </tr>
+																	   <tr>
+																		<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																		<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																		<td><input type="text" name="daterange" value="01/01/2018 - 01/15/2018" /></td>
+																	  </tr>
+																	   <tr>
+																		<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																		<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																		<td><input type="text" name="daterange" value="01/01/2018 - 01/15/2018" /></td>
+																	  </tr>
+																	</tbody>
+																  </table>
+
+																  <div class="card-action">
+																	<input type="button" value="Add Row" onclick="rowAdd();" />
+																   <input type="button" name="reset_form" value="Reset Table" onclick="this.form.reset();">
+																  </div>
+																</ul>
+															</form>
+															<script>
+																function rowAdd() {
+													var table = document.getElementById("SectionFour");
+													var count = parseInt(table.rows[1].cells.length);
+													var rowCount = parseInt(prompt("Enter the number of row to be created?"));
+														for(var k = 0; k < rowCount; k++) {
+															var row = table.insertRow(1);
+																for(var i=0;i<count;i++) {
+																	row.insertCell(i).innerHTML = "<input type='text' class='form-control input-pill' id='' placeholder=''>";
+												
+													}								
+												}
+											}
+											
+											
+														</script>
+														
+														<script>
+														
+															$(function() {
+
+															$('input[name="daterange"]').daterangepicker({
+															opens: 'left'
+
+															}, function(start, end, label) {
+
+																console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+
+															});
+
+															});
+															</script>
+														</div>
+													</div>	
+												</div>
+											</div>
+										</div>
+											
+												<div class="row">
+													<div class="col-md-9">
+														<div class="card">
+														<div class="card-header">
+															<div class="card-title">
+															<ul>
+																<li>Section #5</li></div>
+																<h5>Results of Evaluation and Interview:</h5>	
+															</ul>
+															</div>
+															<div class="card-body">
+																<form>
+																<table class="table table-striped mt-3" id = "SectionFive">
+																<thead>
+																<tr>
+																	<th scope="col">Strong Points</th>
+																	<th scope="col">Weak Points</th>
+																	<th scope="col">Recommendations</th>
+														
+																</tr>
+																</thead>
+																<tbody>
+																<tr>																
+																	<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																	<td><input type="text" class="form-control input-pill" id="" placeholder=""></td> 
+																	<td><input type="text" class="form-control input-pill" id="" placeholder=""></td> 
+																</tr>
+																<tr>
+																	<td><input type="text" class="form-control input-pill" id="" placeholder=""</td>
+																	<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>  
+																	<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>  
+																</tr>
+																<tr>
+																	<td><input type="text" class="form-control input-pill" id="" placeholder=""</td>
+																	<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																	<td><input type="text" class="form-control input-pill" id="" placeholder=""></td>
+																</tr>
+																</tbody>
+																</table>
+																
+																	<div class="card-action">
+																	<input type="button" value="Add Row" onclick="AddRow();" />
+																   <input type="button" name="reset_form" value="Reset Table" onclick="this.form.reset();">
+																  </div>
+																</form>
+																
+																			
+																<div class ="form-group"> 													
+																	<label for="comment"><strong>General Comments<strong></label>
+																		<textarea class = "form-control" id ="comment5" rows = "5">
+																		</textarea>
+																</div>
+																
+																<input type="button" id= "reset5" value="Reset" onclick= "resetComment5()" />			
+																<br>
+																<br>
+									<script>
+									function resetComment5(e)
+									{
+										document.getElementById('comment5').value = "";
+									}
+									document.getElementById("reset5").addEventListener('click', resetComment5, true);
+									
+									</script>																
+
+
+
+																
+																	
+																<h6><strong>Record Attendance<strong></h6>
+																<div class="form-group">
+																	<label for="exampleFormControlSelect1">Number of Days Late</label>
+																		<select class="form-control" id="exampleFormControlSelect1">
+																			<option>0</option>
+																			<option>1</option>
+																			<option>2</option>
+																			<option>3</option>
+																			<option>4</option>
+																			<option>5</option>
+																			<option>6</option>
+																			<option>7</option>
+																			<option>8</option>
+																			<option>9</option>
+																			<option>10</option>
+																		</select>
+																</div>
+																
+																<div class="form-group">
+																	<label for="exampleFormControlSelect1">Absent(No Excuse)</label>
+																		<select class="form-control" id="exampleFormControlSelect1">
+																			<option>0</option>
+																			<option>1</option>
+																			<option>2</option>
+																			<option>3</option>
+																			<option>4</option>
+																			<option>5</option>
+																			<option>6</option>
+																			<option>7</option>
+																			<option>8</option>
+																			<option>9</option>
+																			<option>10</option>
+																		</select>
+																</div>
+																<div class="form-group">
+																	<label for="exampleFormControlSelect1">Days ILL</label>
+																		<select class="form-control" id="exampleFormControlSelect1">
+																			<option>0</option>
+																			<option>1</option>
+																			<option>2</option>
+																			<option>3</option>
+																			<option>4</option>
+																			<option>5</option>
+																			<option>6</option>
+																			<option>7</option>
+																			<option>8</option>
+																			<option>9</option>
+																			<option>10</option>
+																		</select>
+																</div>	
+
+															<script>
+	
+													function AddRow() {
+													var table = document.getElementById("SectionFive");
+													var count = parseInt(table.rows[1].cells.length);
+													var rowCount = parseInt(prompt("Enter the number of row to be created?"));
+														for(var k = 0; k < rowCount; k++) {
+															var row = table.insertRow(1);
+																for(var i=0;i<count;i++) {
+																	row.insertCell(i).innerHTML = "<input type='text' class='form-control input-pill' id='' placeholder=''>";
+												
+													}								
+												}
+											}
+											
+																			
+											</script>	
+																
+														</div>
+													</div>
+												</div>
+											</div>
+												<div class="row">
+													<div class="col-md-9">
+														<div class="card">
+															<div class="card-header">
+																<div class="card-title">
+																<ul>
+																	<li>Section #6</li></div>
+																	<h5>Performance Ratings Summary:</h5>	
+																</ul>
+																</div>
+																	<div class="card-body">
+																	<form>
+																		<table class="table table-striped mt-3" id = "Overall Rating">
+																		<thead>
+																		<tr>
+																			<th scope="col">Achievement of Performance Goals- /30</th>
+																			<th scope="col">Performance of Key Duties- /40</th>
+																			<th scope="col">General Performance Requirements- /30</th>
+																			<th scope="col">Overall Performance Rating- /100</th>
+														
+																		</tr>
+																		</thead>
+																		<tbody>
+																		<tr>																
+																			<td><b><span id="FirstSection"></span></b></td> 
+																			<td><b><span id="SecondSection"></span></b></td>
+																			<td><b><span id="ThirdSection"></span></b></td>
+																			<td><b><span id="OverallScore"></span></b></td>
+																		</tr>					
+																		</tbody>
+																		</table>
+																		
+																		
+																	<div class="card-action">
+																		<input type="button" id= "results" value="Get Results" onclick= "getResults()" />	
+																  </div>
+																	</form>				
+													</div>
+												</div>
+											</div>	
+										</div>
+										
+										
+																			<div class="row">
+																				<div class="col-md-9">
+																					<div class="card">
+																						<div class="card-header">
+																							<div class="card-title">
+																								<ul>
+																									<li>Discussion Review and Confirmation</li></div>
+																									<h6>1st Initial Evaluation:</h6>	
+																									<p>Employee Comments: (if necessary, additional sheets may be added. I think this assessment was Fair/Unfair
+																									and the process conducted satisfactorily/unsatisfactorily.</p>
+																								</ul>
+																							</div>
+																								<div class="card-body">	
+																									<div class="form-group">
+																										<label for="comment"><strong>Employee Comments</strong></label>
+																											<textarea class="form-control" id="comment6" rows="5">
+
+																											</textarea>
+																									</div>
+																									
+																									<input type="button" id= "reset6" value="Reset" onclick= "resetComment6()" />		
+																									
+																									
+																	<script>
+																	function resetComment6(e)
+																	{
+																		document.getElementById('comment6').value = "";
+																	}
+																	document.getElementById("reset6").addEventListener('click', resetComment6, true);
+																	
+																	</script>
+																									
+																									<br>
+																									<br>
+																									<p>___________________ 	&thinsp; &thinsp;						___________________</p><br>
+																									<p> <strong>Employee Signature</strong>		&thinsp; &thinsp; &thinsp; &thinsp;	<strong>Date</strong></p>
+																									<p>(I acknowledge that the performance evaluation was discussed with me)</p><br>
+																									<br>
+																									<br>
+																									<p>			_____________________	&thinsp; &thinsp;							___________________</p><br>
+																									<p> <strong>Supervisor Signature</strong>	&thinsp; &thinsp; &thinsp; &thinsp;	<strong>Date</strong></p>
+																									
+																									
+																								</div>
+																								<ul>
+																								<br>
+																								<h5>2nd Initial Evaluation(This must be done if at any time after the initial evaluation, the supervisor
+																								seeks to make changes (-/+) to the employees score)</h5>	
+																								<p>Employee Comments: (if necessary, additional sheets may be added. I think this assessment was Fair/Unfair
+																								and the process conducted satisfactorily/unsatisfactorily.</p>
+																								</ul>
+																								<div class="form-group">
+																										<label for="comment"><strong>Employee Comments</strong></label>
+																											<textarea class="form-control" id="comment7" rows="5">
+
+																											</textarea>
+																									</div>
+																									
+																							<input type="button" id= "reset7" value="Reset" onclick= "resetComment7()" />		
+																									
+																									
+																	<script>
+																	function resetComment7(e)
+																	{
+																		document.getElementById('comment7').value = "";
+																	}
+																	document.getElementById("reset7").addEventListener('click', resetComment7, true);
+																	
+																	</script>
+																									
+																									
+																									<br>
+																									<br>
+																									<p>___________________ 	&thinsp; &thinsp;						___________________</p><br>
+																									<p> <strong>Employee Signature</strong>		&thinsp; &thinsp; &thinsp; &thinsp;	<strong>Date</strong></p>
+																									<p>(I acknowledge that the performance evaluation was discussed with me)</p><br>
+																									<br>
+																									<br>
+																									<p>			_____________________	&thinsp; &thinsp;							___________________</p><br>
+																									<p> <strong>Supervisor Signature</strong>	&thinsp; &thinsp; &thinsp; &thinsp;	<strong>Date</strong></p>
+																									
+																							</div>
+																						</div>
+																					</div>
+								
+											<div class="row">
+												<div class="col-md-9">
+													<div class="card">
+														<div class="card-header">
+															<div class="card-title">
+															<ul>
+																<li>Signing</li></div>
+															</ul>
+															</div>
+			
+														<div class="card-body">
+															<br>
+															<br>
+															<p>___________________ 	&thinsp; &thinsp;			_____________________	&thinsp; &thinsp;							___________________</p><br>
+															<p> <strong>Employee Signature</strong>	&thinsp; &thinsp; &thinsp;	<strong>Supervisor Signature</strong>	&thinsp; &thinsp; &thinsp; &thinsp;	<strong>Date</strong></p><br>
+															<p><strong>**FOR OFFICIAL USE ONLY**<strong></p> 
+															<br>
+															<p>Immediate Next-Level Manager Review:_________________________	&thinsp;		Date:________________</p> 
+															<br>
+															<p>HR Review:___________________ &thinsp;		Date:________________</p>
+															
+														<div class="form-group">
+																	<label for="exampleFormControlSelect1">Copies</label>
+																		<select class="form-control" id="exampleFormControlSelect1">
+																			<option>1</option>
+																			<option>2</option>
+																			<option>3</option>
+																			<option>4</option>
+																			<option>5</option>
+																			
+																		</select>
+														</div>	
+															
+														<div class="card-action">
+																<button class="btn btn-success">Submit</button>
+																<button class="btn btn-danger">Cancel</button>
+																<button class ="btn btn-primary">Finish Later</button>						
+																<button class="btn btn-warning" onclick="window.print()">Print</button>
+														</div>	
+														<br>
+													
+													</div>
+												</div>
+											</div>
+										</div>
+						<br>		
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+
+function getResults() { 
+   document.getElementById("FirstSection").innerHTML= document.getElementById("SectionScore").innerHTML;
+   document.getElementById("SecondSection").innerHTML= document.getElementById("SecScore").innerHTML;
+   document.getElementById("ThirdSection").innerHTML= document.getElementById("SScore").innerHTML;
+
+  var f = document.getElementById("FirstSection").innerHTML;
+  var s = document.getElementById("SecondSection").innerHTML;
+  var t = document.getElementById("ThirdSection").innerHTML;
+
+  var overall_score = parseFloat(s) + parseFloat(f) + parseFloat(t);
+  document.getElementById("OverallScore").innerHTML = overall_score.toFixed(2);
+
+}
+
+
+</script>
+</body>
+
+<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="assets/js/core/popper.min.js"></script>
+<script src="assets/js/core/bootstrap.min.js"></script>
+<script src="assets/js/plugin/chartist/chartist.min.js"></script>
+<script src="assets/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js"></script>
+<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script src="assets/js/plugin/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="assets/js/plugin/jquery-mapael/maps/world_countries.min.js"></script>
+<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script src="assets/js/ready.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+</html>
