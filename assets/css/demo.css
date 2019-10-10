@@ -99,3 +99,11 @@
 .from-show-notify label{
 	padding-top: 0.65rem;
 }
+
+.sidebar {
+    background-color: #121213 !important;
+}
+
+.main-header {
+    background-color: #151719 !important;
+}
