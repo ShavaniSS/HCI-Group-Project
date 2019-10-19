@@ -1,284 +1,161 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>Dashboard</title>
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
-	<link rel="stylesheet" href="assets/css/ready.css">
-	<link rel="stylesheet" href="assets/css/demo.css">
-</head>
-<body>
-	<div class="wrapper">
-		<div class="main-header">
-			<div class="logo-header">
-				<a href="index.html" class="logo" style = "color: white;">
-					Vote : ANU 
-				</a>
-			</div>
-			<nav class="navbar navbar-header navbar-expand-lg" id = "navigation">
-				<div class="container-fluid"></div>
-				
-			</nav>
-				<style>
-						
-						h1{
-							
-							text-align: center;
-							font-family: "Comic Sans MS", cursive, sans-serif;
-							font-size: 50px;
-							letter-spacing: 0.8px;
-							word-spacing: 2px;
-							color: #000000;
-							font-weight: normal;
-							text-decoration: none;
-							font-style: italic;
-							font-variant: normal;
-							text-transform: none;
-							
-						}
-					</style>
-					
-			</div>
-			<div class="sidebar">
-				<div class="scrollbar-inner sidebar-wrapper">
-					<ul class="nav">
-						<li class="nav-item active">
-							<a href="index.html">
-								<i class="la la-dashboard"></i>
-								<p>Dashboard</p>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="forms.html">
-								<i class="la la-users"></i>
-								<p>Candidates</p>
-							</a>
-						</li>
-						<li class="nav-item">
-								<a href="constituencies.html">
-									<i class="la la-university"></i>
-									<p>Constituencies</p>
-								</a>
-							</li><li class="nav-item">
-									<a href="forms.html">
-										<i class="la la-times-circle"></i>
-										<p>Vote Now</p>
-									</a>
-								</li>
-					</ul>
-				</div>
-			</div>
+--- 
+layout: dashboard
+title: Ballot Counts
+---
 
-			<style>
-				.sidebar{
-					background-color: #000000;
-				}
+<div class="container-fluid">
+  <h4 class="page-title"> {{ page.title }}</h4>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card card-stats card-warning">
+        <div class="card-body ">
+          <div class="row">
+            <div class="col-5">
+              <div class="icon-big text-center">
+                <i class="la la-users"></i>
+              </div>
+            </div>
+            <div class="col-7 d-flex align-items-center">
+              <div class="numbers">
+                <p class="card-category">Democratic National Alliance</p>
+                <h4 class="card-title">1234</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card card-stats card-success">
+        <div class="card-body ">
+          <div class="row">
+            <div class="col-5">
+              <div class="icon-big text-center">
+                <i class="la la-bar-chart"></i>
+              </div>
+            </div>
+            <div class="col-7 d-flex align-items-center">
+              <div class="numbers">
+                <p class="card-category">Go Green</p>
+                <h4 class="card-title">50</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card card-stats card-danger">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-5">
+              <div class="icon-big text-center">
+                <i class="la la-newspaper-o"></i>
+              </div>
+            </div>
+            <div class="col-7 d-flex align-items-center">
+              <div class="numbers">
+                <p class="card-category">Antigua and Barbuda Labour Party</p>
+                <h4 class="card-title">4569</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card card-stats card-primary">
+        <div class="card-body ">
+          <div class="row">
+            <div class="col-5">
+              <div class="icon-big text-center">
+                <i class="la la-check-circle"></i>
+              </div>
+            </div>
+            <div class="col-7 d-flex align-items-center">
+              <div class="numbers">
+                <p class="card-category">United Progressive Party</p>
+                <h4 class="card-title">1243</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Predictor</h4>
+          <p class="card-category">Antigua and Barbuda Labour Party</p>
+        </div>
+        <div class="card-body">
+          <div id="task-complete" class="chart-circle mt-4 mb-3"></div>
+        </div>
+        <div class="card-footer">
+          <div class="legend"><i class="la la-circle text-primary"></i></div>
+        </div>
+      </div>
+    </div>
 
-				.main-header{
-					background-color: #000000;
-				}
-			</style>
-
-			<div class="main-panel">
-				<div class="content">
-					<div class="container-fluid">
-						<h4 class="page-title">Ballot Counts</h4>
-						<div class="row">
-							<div class="col-md-3">
-								<div class="card card-stats card-warning">
-									<div class="card-body ">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="la la-users"></i>
-												</div>
-											</div>
-											<div class="col-7 d-flex align-items-center">
-												<div class="numbers">
-													<p class="card-category">Democratic National Alliance</p>
-													<h4 class="card-title">1234</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card card-stats card-success">
-									<div class="card-body ">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="la la-bar-chart"></i>
-												</div>
-											</div>
-											<div class="col-7 d-flex align-items-center">
-												<div class="numbers">
-													<p class="card-category">Go Green</p>
-													<h4 class="card-title">50</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card card-stats card-danger">
-									<div class="card-body">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="la la-newspaper-o"></i>
-												</div>
-											</div>
-											<div class="col-7 d-flex align-items-center">
-												<div class="numbers">
-													<p class="card-category">Antigua and Barbuda Labour Party</p>
-													<h4 class="card-title">4569</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3">
-								<div class="card card-stats card-primary">
-									<div class="card-body ">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="la la-check-circle"></i>
-												</div>
-											</div>
-											<div class="col-7 d-flex align-items-center">
-												<div class="numbers">
-													<p class="card-category">United Progressive Party</p>
-													<h4 class="card-title">1243</h4>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-header">
-										<h4 class="card-title">Predictor</h4>
-										<p class="card-category">Antigua and Barbuda Labour Party</p>
-									</div>
-									<div class="card-body">
-										<div id="task-complete" class="chart-circle mt-4 mb-3"></div>
-									</div>
-									<div class="card-footer">
-										<div class="legend"><i class="la la-circle text-primary"></i></div>
-									</div>
-								</div>
-							</div>
-
-							<img src ="C:\source\repos\HCI-Group-Project\assets\img\flag.png" alt = "Flag" height = "355" width = "690">
-						</div>
-						<div class="row row-card-no-pd">
-							<div class="col-md-4">
-								<div class="card">
-									<div class="card-body">
-										<p class="fw-bold mt-1">Antigua and Barbuda National Election 2021</p>
-										<h4><b>Constituency Leadings</b></h4>
-									</div>
-									<div class="card-footer">
-										<ul class="nav">
-											<li class="nav-item ml-auto"><a class="btn btn-default btn-link" href="#"><i class="la la-refresh"></i> Refresh</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-5">
-								<div class="card">
-									<div class="card-body">
-										<div class="progress-card">
-											<div class="d-flex justify-content-between mb-1">
-												<span class="text-muted">Go Green</span>
-												<span class="text-muted fw-bold"> 78%</span>
-											</div>
-											<div class="progress mb-2" style="height: 7px;">
-												<div class="progress-bar bg-success" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="78%"></div>
-											</div>
-										</div>
-										<div class="progress-card">
-											<div class="d-flex justify-content-between mb-1">
-												<span class="text-muted">Antigua and Barbuda Labour Party</span>
-												<span class="text-muted fw-bold"> 65%</span>
-											</div>
-											<div class="progress mb-2" style="height: 7px;">
-												<div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="65%"></div>
-											</div>
-										</div>
-										<div class="progress-card">
-											<div class="d-flex justify-content-between mb-1">
-												<span class="text-muted">United Progressive Party</span>
-												<span class="text-muted fw-bold"> 70%</span>
-											</div>
-											<div class="progress mb-2" style="height: 7px;">
-												<div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="70%"></div>
-											</div>
-										</div>
-										<div class="progress-card">
-											<div class="d-flex justify-content-between mb-1">
-												<span class="text-muted">Democratic National Alliance</span>
-												<span class="text-muted fw-bold"> 60%</span>
-											</div>
-											<div class="progress mb-2" style="height: 7px;">
-												<div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="60%"></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-				<footer class="footer">
-					<div class="container-fluid">
-						<nav class="pull-left">
-							<ul class="nav">
-								<li class="nav-item">
-									<a class="nav-link" href="#">
-										Dashboard
-									</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">
-										Help
-									</a>
-								</li>
-							</ul>
-						</nav>
-						<div class="copyright ml-auto">
-							Made with <i class="la la-heart heart text-danger"></i> by <a href="#">Shavani S. Stewart & Canice James(2019)</a>
-						</div>				
-					</div>
-				</footer>
-			</div>
-		</div>
-	</div>
-	
-</body>
-<script src="assets/js/core/jquery.3.2.1.min.js"></script>
-<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-<script src="assets/js/core/popper.min.js"></script>
-<script src="assets/js/core/bootstrap.min.js"></script>
-<script src="assets/js/plugin/chartist/chartist.min.js"></script>
-<script src="assets/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js"></script>
-<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
-<script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
-<script src="assets/js/plugin/jquery-mapael/jquery.mapael.min.js"></script>
-<script src="assets/js/plugin/jquery-mapael/maps/world_countries.min.js"></script>
-<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
-<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-<script src="assets/js/ready.min.js"></script>
-<script src="assets/js/demo.js"></script>
-</html>
+    <img src ="C:\source\repos\HCI-Group-Project\assets\img\flag.png" alt = "Flag" height = "355" width = "690">
+  </div>
+  <div class="row row-card-no-pd">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <p class="fw-bold mt-1">Antigua and Barbuda National Election 2021</p>
+          <h4><b>Constituency Leadings</b></h4>
+        </div>
+        <div class="card-footer">
+          <ul class="nav">
+            <li class="nav-item ml-auto"><a class="btn btn-default btn-link" href="#"><i class="la la-refresh"></i> Refresh</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="card">
+        <div class="card-body">
+          <div class="progress-card">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="text-muted">Go Green</span>
+              <span class="text-muted fw-bold"> 78%</span>
+            </div>
+            <div class="progress mb-2" style="height: 7px;">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="78%"></div>
+            </div>
+          </div>
+          <div class="progress-card">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="text-muted">Antigua and Barbuda Labour Party</span>
+              <span class="text-muted fw-bold"> 65%</span>
+            </div>
+            <div class="progress mb-2" style="height: 7px;">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="65%"></div>
+            </div>
+          </div>
+          <div class="progress-card">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="text-muted">United Progressive Party</span>
+              <span class="text-muted fw-bold"> 70%</span>
+            </div>
+            <div class="progress mb-2" style="height: 7px;">
+              <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="70%"></div>
+            </div>
+          </div>
+          <div class="progress-card">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="text-muted">Democratic National Alliance</span>
+              <span class="text-muted fw-bold"> 60%</span>
+            </div>
+            <div class="progress mb-2" style="height: 7px;">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" data-toggle="tooltip" data-placement="top" title="60%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
