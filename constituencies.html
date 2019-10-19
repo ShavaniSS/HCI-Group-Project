@@ -1,27 +1,50 @@
 --- 
-layout: dashboard
-title: Parishes and Constituencies
+  layout: dashboard 
+  title: Parishes and Constituencies 
+
+  parishes:
+    - name: St. George's 
+      map: embed?pb=!1m18!1m12!1m3!1d61006.45986889421!2d-61.813038325856354!3d17.1261940881998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c1296f16179c1e9%3A0xea3c514079bc969a!2sSaint%20George!5e0!3m2!1sen!2sag!4v1571273056919!5m2!1sen!2sag
+      population: "8,055"
+    - name: St. John's
+      map: embed?pb=!1m18!1m12!1m3!1d30503.341852907353!2d-61.86240449898364!3d17.125511847092625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c12924beb8e1ba5%3A0x7c46122f63db374f!2sSt%20John&#39;s!5e0!3m2!1sen!2sag!4v1571270965806!5m2!1sen!2sag
+      population: "51,737"
+    - name: St. Mary's
+      map: embed?pb=!1m18!1m12!1m3!1d61029.954812311385!2d-61.890723676151126!3d17.054438499287734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c12ed310ad32dc7%3A0xdb3496a792fa72cf!2sSaint%20Mary!5e0!3m2!1sen!2sag!4v1571272782846!5m2!1sen!2sag
+      population: "7,341"
+    - name: St. Paul's
+      map: embed?pb=!1m18!1m12!1m3!1d61037.30195178274!2d-61.806480376243236!3d17.031939502768235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c12eb3871675d97%3A0x23add949e6ca19bb!2sSaint%20Paul!5e0!3m2!1sen!2sag!4v1571273416394!5m2!1sen!2sag
+      population: "8,128"
+
 ---
 
 <div class="container-fluid">
-  <h4 class="page-title"> {{ page.title }}</h4>
+  <h4 class="page-title">{{ page.title }}</h4>
   <br>
   <div class="row">
-    <div class="col-md-8">
+  {% for parish in page.parishes %}
+
+    <div class="col-md-6 col-sm-auto">
       <div class="card">
         <div class="card-header">
           <h4 class="card-title">Parish</h4>
-          <p class="card-category">St. John's </p>
+          <p class="card-category">{{ parish.name }}</p>
         </div>
-        <div class="card-body">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30503.341852907353!2d-61.86240449898364!3d17.125511847092625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c12924beb8e1ba5%3A0x7c46122f63db374f!2sSt%20John&#39;s!5e0!3m2!1sen!2sag!4v1571270965806!5m2!1sen!2sag"
-            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <div class="card-body embed-responsive embed-responsive-1by1">
+          <iframe class="embed-responsive-item"
+            src="https://www.google.com/maps/{{ parish.map }}"
+            width="auto" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
         <div class="card-footer">
-          <div class="legend"><i class="la la-users">Population: Approx. 26,000</i></div>
+          <div class="legend"><i class="la la-users"> Population: {{ parish.population }} </i></div>
         </div>
       </div>
     </div>
-  </div>
+ 
+  {% endfor %}
 </div>
+
+
+
+
+  </div>
